@@ -2,17 +2,18 @@ var newA;
 var radius;
 
 function setup() {
-    createCanvas(800, 600);
+    createCanvas(1200, 800);
     newA = 0;
     radius = 80;
 }
 
 
 function draw() {
-    background("white");
-
+    background(66, 183, 254);
+    
     fill(100);
-    ellipse(xRot(newA), yRot(newA), 20, 20); 
+    rectMode(CENTER);
+    rect(xRot(newA), yRot(newA), random(25, 100), random(25, 100)); 
     newA -= 0.05;
     rad = 80;
 
@@ -21,12 +22,12 @@ function draw() {
 }
 
 function xRot(a) {
-    var newXRot = mouseX + cos(a) * radius;
+    var newXRot = width/2 + cos(a) * radius;
     return newXRot;
 }
 
 function yRot(a) {
-    var newYRot = mouseY + sin(a) * radius;
+    var newYRot = height/2 + sin(a) * radius;
     return newYRot;
 }
 
