@@ -9,6 +9,7 @@ function setup() {
 
 
 function draw() {
+<<<<<<< HEAD
     background(66, 183, 255);
     ellipse(xRot(newA), yRot(newA), 75, 75);
     ellipse(xRot(-newA), yRot(-newA), 75, 75);
@@ -22,6 +23,17 @@ function draw() {
 
     newA += 0.05;
 
+=======
+    background(66, 183, 254);
+
+    fill(100);
+    rectMode(CENTER);
+    rect(xRot(newA), yRot(newA), random(25, 100), random(25, 100));
+    newA -= 0.05;
+    rad = 80;
+
+
+>>>>>>> e062d1bcde9da51f2a66aa31e35c4a4090cf3178
 
 }
 
