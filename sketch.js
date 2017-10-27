@@ -19,20 +19,7 @@ function draw() {
     fill(255, 255, 0, 200);
 
 
-
-
     newA += 0.05;
-
-
-    background(66, 183, 254);
-
-    fill(100);
-    rectMode(CENTER);
-    rect(xRot(newA), yRot(newA), random(25, 100), random(25, 100));
-    newA -= 0.05;
-    rad = 80;
-
-
 
 
 }
