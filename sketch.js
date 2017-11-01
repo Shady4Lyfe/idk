@@ -1,3 +1,5 @@
+// Animation
+
 var newA;
 var radius;
 var r;
@@ -7,7 +9,7 @@ var b;
 function setup() {
     createCanvas(1200, 800);
     newA = 0;
-    radius = 5;
+    radius = 3;
     r = 66;
     g = 210;
     b = 255;
@@ -28,23 +30,23 @@ function draw() {
     ellipse(xRot(newA) - 40, yRot(newA), 100, 100); //  Left leaf
     ellipse(xRot(-newA) + 40, yRot(-newA), 100, 100); // Right leaf
 
+    fill(100); // Grey
+    quad(700, 525, 800, 500, 825, 600, 650, 600); // Rock
 
     // LOGIC
-    newA += 0.05; // Continuously increase new angle
-
-    for(let x = )
+    newA += 0.04; // Continuously increase new angle
 
 }
 
 
 // Formulas that constantly rotate x and y in a circle
 function xRot(a) {
-    var newXRot = 233 + cos(a) * radius; // (x) + cos(angle) * radius
+    var newXRot = 233 + cos(a) * radius; // new x value = x + cos(angle) * radius
     return newXRot;
 }
 
 function yRot(a) {
-    var newYRot = height / 2 - 20 + sin(a) * radius; // (y) + sin(angle) * radius
+    var newYRot = height / 2 - 20 + sin(a) * radius; // new y value = y + sin(angle) * radius
     return newYRot;
 }
 
