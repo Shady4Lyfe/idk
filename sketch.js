@@ -1,4 +1,4 @@
-// Animation
+// Landscape
 
 var newAngle;
 var radius;
@@ -14,7 +14,8 @@ function setup() {
     r = 66;
     g = 210;
     b = 255;
-    for (var i = 0; i < width; i++) { // Allows to loop the push
+    
+    for (var i = 0; i < width; i++) {
         randArray.push(random(560, 600)); // Pushes numbers into array
     }
 }
@@ -22,8 +23,9 @@ function setup() {
 
 function draw() {
     // DRAW
-    background(r, g, b); // Background
+    background(r, g, b);
     stroke(0);
+    
     fill(13, 225, 105); // Ground green
     rect(0, 600, innerWidth, innerHeight); // Ground
 
